@@ -52,3 +52,6 @@ END AS ‘Category’
 FROM mobile_sales;
 
 ```
+
+## Visualization
+### Pivot Tables

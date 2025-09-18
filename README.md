@@ -38,3 +38,17 @@ SELECT paymentmethod, SUM(price) AS TotalRevenue
 FROM mobile_sales
 GROUP BY paymentmethod
 ORDER BY TotalRevenue DESC;
+
+```
+
+```SQL
+---Categorize the data into gold, silver and diamond---
+SELECT *,
+CASE
+WHEN price < 500 THEN ‘Silver’
+WHEN price BETWEEN 500 AND 1000 THEN ‘Gold’
+ELSE ‘Diamond’
+END AS ‘Category’
+FROM mobile_sales;
+
+```
